@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My webpages</title>
+</head>
+
+<body background="/Users/muhanma/Downloads/personal website/images/background.png">
+<h1 style="text-align:center">MUHAN MA</h1>
+<h3 style="text-align: center">
+    <a href="/Users/muhanma/Downloads/personal website/pages/home">home</a>   
+    <a href="/Users/muhanma/Downloads/personal website/pages/works">works</a>
+    <a href="/Users/muhanma/Downloads/personal website/pages/about">about</a> 
+    <a href="/Users/muhanma/Downloads/personal website/pages/contact">contact</a></h3>
+<img src="/Users/muhanma/Downloads/personal website/pages/images/work1.jpg" align="left"/>
+<img src="/Users/muhanma/Downloads/personal website/pages/images/work1.jpg"align="center"/>
+<img src="/Users/muhanma/Downloads/personal website/pages/images/work1.jpg"align="center"/>
+<img src="/Users/muhanma/Downloads/personal website/pages/images/work1.jpg"align="center"/>
+<img src="/Users/muhanma/Downloads/personal website/pages/images/work1.jpg"align="center"/>
+<img src="/Users/muhanma/Downloads/personal website/pages/images/work1.jpg"align="right"/>
+</body>
+</html>

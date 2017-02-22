@@ -55,9 +55,8 @@ body {
 }
 p { color: #ffffff;  }
 
-/*-=-=-=-=-=-=-=-=-=-*/
+
 /* Column Grids */
-/*-=-=-=-=-=-=-=-=-= */
 
 .col_half { width: 49%; }
 .col_third { width: 32%; }
@@ -81,9 +80,8 @@ p { color: #ffffff;  }
 }
 .end { margin-right: 0 !important; }
 
-/*-=-=-=-=-=-=-=-=-=-=- */
 /* Flip Panel */
-/*-=-=-=-=-=-=-=-=-=-=- */
+
 
 .wrapper{ width: 980px; margin: 0 auto;  background-color: #bdd3de; hoverflow: hidden;}
 
@@ -167,6 +165,5 @@ p { color: #ffffff;  }
 	-webkit-border-radius: 10px;
 }
 .container{
-  padding-bottom: 200px;
-
+  padding-bottom: 250px;
 }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/p3">
+
+    <title>Muhan Ma</title>
+    <!-- Custom styles -->
+    <link href="methods.css" rel="stylesheet">
+  </head>
+
+  <body style='margin:0; padding:0; height: 100%; width: 100%; overflow:hidden;'>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="home-container">
+          
+          <div class="masthead clearfix">
+            <div class="inner" >
+
+<!--narvbar-->
+         <nav>
+  <ul>
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="#">About</a>
+    </li>
+    <li>
+      <a href="#">Services</a>
+    </li>
+    <li>
+      <a href="#">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+                </div> 
+               </div>
+             </div>
+  <!--content-->
+
+ <div class="inner home">
+   <!--Card-->          
+ <h2>Know Context</h2>
+<h3>In this mode, we study the circumstances or events that affect the environment in which our innovation offerings exist or could exsit.</h3>
+<div class="cardset">
+
+<ul class="cards">
+
+  <li class="card">
+    <h1>Buzz Reports </h1>
+    <p>Understanding patterns of change and new developments in our daily life that can drive innovation often comes not only from the core research done for a project, but from tangential, peripheral, or unexpected sourcess.
+      the "buzz" that goes on around the world that catches everyone's attention today, even though seemingly unrelated to a project, is a good source of inspiration for finding innovation opportunities. Buzz reports are a way to collect such information about changes on a regular basis and share it among team members to have a broad understanding of what is currently significant. Buzz Reports function like a self-henerated news aggregation service. they encourage curiosity about the latest developments and inspire new directions for innovation.
+    </p>
+  </li>
+  <li class="card">
+    <h1>Eras Map </h1>
+
+    <p>The Eras Map provides historical perspective to the context being studied. Understanding how things change over time offers a fuller picture of the context and helps team think about where things may be headed in the future and where opportunites might exist.
+      The Eras Map highlights the key characteristics of each relevant period, shows how each era is different, and indicates how much they have changed over time. Constructing this as an overview map helps us see the larger patterns of change in the context being studied.
+    </p>
+  </li>
+  <li class="card">
+    <h1>Comment Card 3</h1>
+
+    <p>Donec nunc ligula, vulputate quis mollis eu, interdum quis libero. Donec nulla ante, facilisis sit amet vulputate at, tincidunt a velit. Maecenas vestibulum, nulla sed tincidunt viverra, lorem turpis aliquam urna, ut pretium orci purus consequat augue.
+      Etiam a enim orci, vitae pulvinar odio. In elit urna, tincidunt a pellentesque et, scelerisque at nibh. Sed nec est sapien. Aliquam ullamcorper eros eu quam ultrices vel faucibus eros interdum. Etiam mattis eleifend sapien, eu iaculis massa feugiat
+      sed. Aliquam erat volutpat. Vivamus facilisis ultricies eros, a pretium purus mollis id. Sed dapibus elit ut neque rutrum dignissim. Nulla eros nisl, venenatis quis rhoncus sit amet, molestie nec nisl. Pellentesque vel neque sapien, et sagittis
+      nulla.</p>
+
+  </li>
+  <li class="card">
+    <h1>Comment Card 4</h1>
+
+    <p>Donec nunc ligula, vulputate quis mollis eu, interdum quis libero. Donec nulla ante, facilisis sit amet vulputate at, tincidunt a velit. Maecenas vestibulum, nulla sed tincidunt viverra, lorem turpis aliquam urna, ut pretium orci purus consequat augue.
+      Etiam a enim orci, vitae pulvinar odio. In elit urna, tincidunt a pellentesque et, scelerisque at nibh. Sed nec est sapien. Aliquam ullamcorper eros eu quam ultrices vel faucibus eros interdum. Etiam mattis eleifend sapien, eu iaculis massa feugiat
+      sed. Aliquam erat volutpat. Vivamus facilisis ultricies eros, a pretium purus mollis id. Sed dapibus elit ut neque rutrum dignissim. Nulla eros nisl, venenatis quis rhoncus sit amet, molestie nec nisl. Pellentesque vel neque sapien, et sagittis
+      nulla.</p>
+
+  </li>
+</ul>
+
+</div>
+
+</div>
+         
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" type="text/javascript"></script>
+<script src="http://iamdanfox.github.io/typetype/jquery.typetype.min.js" type="text/javascript"></script>
+
+  </script>
+ <script>
+$.fn.commentCards = function(){
+
+  return this.each(function(){
+
+    var $this = $(this),
+        $cards = $this.find('.card'),
+        $current = $cards.filter('.card--current'),
+        $next;
+
+    $cards.on('click',function(){
+      if ( !$current.is(this) ) {
+        $cards.removeClass('card--current card--out card--next');
+        $current.addClass('card--out');
+        $current = $(this).addClass('card--current');
+        $next = $current.next();
+        $next = $next.length ? $next : $cards.first();
+        $next.addClass('card--next');
+      }
+    });
+
+    if ( !$current.length ) {
+      $current = $cards.last();
+      $cards.first().trigger('click');
+    }
+
+    $this.addClass('cards--active');
+
+  })
+
+};
+
+$('.cards').commentCards();
+</script>
+  </body>
+</html>
